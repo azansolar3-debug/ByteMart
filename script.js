@@ -1,21 +1,20 @@
-// ============ mobile nav toggle ============
+// ============ mobile category menu toggle ============
 const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
+const categoryNav = document.getElementById('categoryNav');
 
 navToggle.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
+  const isOpen = categoryNav.classList.toggle('open');
   navToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-// close mobile menu after tapping a link
-navLinks.querySelectorAll('a').forEach((link) => {
+categoryNav.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+    categoryNav.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
-// ============ product image galleries ============
+// ============ product card image galleries ============
 document.querySelectorAll('[data-gallery]').forEach((gallery) => {
   const mainImg = gallery.querySelector('[data-main-img]');
   const thumbs = gallery.querySelectorAll('.thumb');
@@ -37,30 +36,36 @@ const orderSection = document.getElementById('order');
 
 document.querySelectorAll('.order-trigger').forEach((button) => {
   button.addEventListener('click', () => {
-    const name = button.getAttribute('data-product');
-    const price = button.getAttribute('data-price');
-    if (productSelect && name) {
-      const matchValue = Array.from(productSelect.options).find((opt) =>
-        opt.value.startsWith(name)
-      );
-      if (matchValue) {
-        productSelect.value = matchValue.value;
-      }
+    const value = button.getAttribute('data-product');
+    if (productSelect && value) {
+      const match = Array.from(productSelect.options).find((opt) => opt.value === value);
+      if (match) productSelect.value = match.value;
     }
     orderSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    // brief highlight so it's obvious the form reacted
     if (productSelect) {
-      productSelect.style.borderColor = 'var(--cyan)';
+      productSelect.style.borderColor = 'var(--brand)';
       setTimeout(() => { productSelect.style.borderColor = ''; }, 1200);
     }
   });
 });
 
+// ============ simple live search across product cards ============
+const searchInput = document.getElementById('searchInput');
+if (searchInput) {
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.trim().toLowerCase();
+    document.querySelectorAll('.product-card').forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+}
+
 // ============ order form submit feedback ============
 const orderForm = document.getElementById('orderForm');
 if (orderForm) {
   orderForm.addEventListener('submit', () => {
-    const submitBtn = orderForm.querySelector('button[type="submit"] span');
+    const submitBtn = orderForm.querySelector('button[type="submit"]');
     if (submitBtn) submitBtn.textContent = 'Sending…';
   });
 }
