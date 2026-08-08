@@ -3,300 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PixelForge — Gaming Gear, Delivered Across Pakistan</title>
+<title>ByteMart — Gaming Gear, Delivered Across Pakistan</title>
 <meta name="description" content="Gaming mice, mechanical keyboards, mousepads, laptops and prebuilt PCs — shop online, order by form, delivered across Pakistan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ TOP UTILITY BAR ============ -->
 <div class="topbar">
-  <div class="topbar-inner">
+  <div class="wrap topbar-inner">
     <span>🚚 Nationwide delivery across Pakistan</span>
-    <span class="topbar-sep">•</span>
     <span>💬 Order in 2 minutes — we message you to confirm</span>
   </div>
 </div>
 
-<!-- ============ HEADER ============ -->
-<header class="site-header">
+<header class="site">
   <div class="header-inner">
-    <a href="#top" class="brand">Pixel<span class="brand-accent">Forge</span></a>
-
-    <form class="search-bar" onsubmit="return false;">
-      <input type="text" id="searchInput" placeholder="Search mouse, keyboard, laptop, PC, mousepad...">
-      <button type="submit" aria-label="Search">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-    </form>
-
-    <a href="#order" class="header-cart">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L22 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
-      <span>Order Now</span>
+    <a href="#home" class="logo">
+      <span class="byte">Byte</span><span class="mart">Mart</span>
+      <span class="plate">GAMING GEAR CO.</span>
     </a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <nav class="top-nav">
+      <a href="#home">Home</a>
+      <a href="#order">Order Now</a>
+    </nav>
   </div>
-
-  <nav class="category-nav" id="categoryNav">
-    <a href="#mouse" data-cat="mouse">Gaming Mouse</a>
-    <a href="#keyboard" data-cat="keyboard">Mechanical Keyboard</a>
-    <a href="#laptop" data-cat="laptop">Gaming Laptop</a>
-    <a href="#pc" data-cat="pc">Gaming PC</a>
-    <a href="#mousepad" data-cat="mousepad">Mousepad</a>
-  </nav>
 </header>
 
-<main id="top">
+<main id="page"></main>
 
-<!-- ============ QUICK CATEGORY ICONS ============ -->
-<section class="quick-cats">
-  <div class="quick-cats-inner">
-    <a href="#mouse" class="quick-cat">
-      <span class="quick-cat-icon">🖱️</span>
-      <span>Mouse</span>
-    </a>
-    <a href="#keyboard" class="quick-cat">
-      <span class="quick-cat-icon">⌨️</span>
-      <span>Keyboard</span>
-    </a>
-    <a href="#laptop" class="quick-cat">
-      <span class="quick-cat-icon">💻</span>
-      <span>Laptop</span>
-    </a>
-    <a href="#pc" class="quick-cat">
-      <span class="quick-cat-icon">🖥️</span>
-      <span>Gaming PC</span>
-    </a>
-    <a href="#mousepad" class="quick-cat">
-      <span class="quick-cat-icon">▭</span>
-      <span>Mousepad</span>
-    </a>
-  </div>
-</section>
-
-<!-- ============ PRODUCT GRID ============ -->
-<section class="products-section">
-  <div class="section-head">
-    <h2>Gaming Gear</h2>
-    <p>Hand-picked peripherals and systems — order below, we'll confirm by message.</p>
-  </div>
-
-  <div class="product-grid">
-
-    <!-- MOUSE -->
-    <article class="product-card" id="mouse" data-cat="mouse">
-      <span class="card-badge">Peripheral</span>
-      <div class="card-gallery" data-gallery>
-        <img data-main-img src="https://i.ibb.co/sdp9DCpQ/Screenshot-2026-08-08-020049.png" alt="7-button wired gaming mouse">
-        <div class="card-thumbs">
-          <button class="thumb active" data-src="https://i.ibb.co/sdp9DCpQ/Screenshot-2026-08-08-020049.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/DHwLd9tY/Screenshot-2026-08-08-020102.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/Sw4mFQRT/Screenshot-2026-08-08-020115.png"></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>7-Button Wired Gaming Mouse</h3>
-        <p class="card-price">Rs. 1,199</p>
-        <ul class="card-specs">
-          <li>7 programmable buttons, mechanical build</li>
-          <li>RGB lighting, 7 modes · 4-level DPI</li>
-          <li>Mouse pad included · great for PUBG Mobile</li>
-        </ul>
-        <button class="btn-order order-trigger" data-product="7-Button Wired Gaming Mouse — Rs. 1,199">Order Now</button>
-      </div>
-    </article>
-
-    <!-- KEYBOARD -->
-    <article class="product-card" id="keyboard" data-cat="keyboard">
-      <span class="card-badge">Peripheral</span>
-      <div class="card-gallery" data-gallery>
-        <img data-main-img src="https://i.ibb.co/G3xC0DZt/Screenshot-2026-08-08-020615.png" alt="JEDEL KL69 mechanical keyboard">
-        <div class="card-thumbs">
-          <button class="thumb active" data-src="https://i.ibb.co/G3xC0DZt/Screenshot-2026-08-08-020615.png"></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>JEDEL KL69 — 60% Mechanical RGB Keyboard</h3>
-        <p class="card-price">Rs. 4,000</p>
-        <ul class="card-specs">
-          <li>61-key compact layout · red mechanical switches</li>
-          <li>RGB rainbow backlight · anti-ghosting</li>
-          <li>Wired USB · Windows / macOS / Linux</li>
-        </ul>
-        <button class="btn-order order-trigger" data-product="JEDEL KL69 Mechanical Keyboard — Rs. 4,000">Order Now</button>
-      </div>
-    </article>
-
-    <!-- LAPTOP -->
-    <article class="product-card" id="laptop" data-cat="laptop">
-      <span class="card-badge">System</span>
-      <div class="card-gallery" data-gallery>
-        <img data-main-img src="https://i.ibb.co/wrz5SfSy/Screenshot-2026-08-08-020715.png" alt="Gaming laptop with RTX 3050">
-        <div class="card-thumbs">
-          <button class="thumb active" data-src="https://i.ibb.co/wrz5SfSy/Screenshot-2026-08-08-020715.png"></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>i5-11400H / RTX 3050 Gaming Laptop</h3>
-        <p class="card-price">Rs. 260,000</p>
-        <ul class="card-specs">
-          <li>11th Gen Intel Core i5-11400H · 32GB DDR4</li>
-          <li>512GB NVMe SSD · RTX 3050 4GB · 16.1" FHD IPS</li>
-          <li>Windows 11 · box packed · 1 year warranty</li>
-        </ul>
-        <button class="btn-order order-trigger" data-product="i5-11400H RTX3050 Gaming Laptop — Rs. 260,000">Order Now</button>
-      </div>
-    </article>
-
-    <!-- MOUSEPAD -->
-    <article class="product-card" id="mousepad" data-cat="mousepad">
-      <span class="card-badge">Peripheral</span>
-      <div class="card-gallery" data-gallery>
-        <img data-main-img src="https://i.ibb.co/hxS4wpV4/Screenshot-2026-08-08-020810.png" alt="Full desk gaming mousepad">
-        <div class="card-thumbs">
-          <button class="thumb active" data-src="https://i.ibb.co/hxS4wpV4/Screenshot-2026-08-08-020810.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/hGbH8wc/Screenshot-2026-08-08-020825.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/zV82383v/Screenshot-2026-08-08-020843.png"></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Full-Desk Gaming Mousepad, 700×300mm</h3>
-        <p class="card-price">Rs. 1,399</p>
-        <ul class="card-specs">
-          <li>Rubber + nylon · anti-slip base</li>
-          <li>Water-resistant, stitched edges</li>
-          <li>Large full table size, rectangular</li>
-        </ul>
-        <button class="btn-order order-trigger" data-product="Full-Desk Gaming Mousepad 700x300mm — Rs. 1,399">Order Now</button>
-      </div>
-    </article>
-
-    <!-- GAMING PC -->
-    <article class="product-card" id="pc" data-cat="pc">
-      <span class="card-badge">System</span>
-      <div class="card-gallery" data-gallery>
-        <img data-main-img src="https://i.ibb.co/JRQQW3vv/Screenshot-2026-08-08-021037.png" alt="Ryzen 5 3600 prebuilt gaming PC">
-        <div class="card-thumbs">
-          <button class="thumb active" data-src="https://i.ibb.co/JRQQW3vv/Screenshot-2026-08-08-021037.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/GfN2KsYm/Screenshot-2026-08-08-021048.png"></button>
-          <button class="thumb" data-src="https://i.ibb.co/tpRZGzFW/Screenshot-2026-08-08-021113.png"></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <h3>Ryzen 5 3600 / RX 590 8GB Gaming Tower</h3>
-        <p class="card-price">Rs. 120,000</p>
-        <ul class="card-specs">
-          <li>Ryzen 5 3600 · A320 board · 16GB DDR4 3200MHz</li>
-          <li>RX 590 8GB · 650W PSU · 128GB NVMe + 1TB HDD</li>
-          <li>Gaming case with 3x ARGB fans, Chillspike cooling</li>
-        </ul>
-        <button class="btn-order order-trigger" data-product="Ryzen 5 3600 / RX590 Gaming PC — Rs. 120,000">Order Now</button>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- ============ TRUST STRIP ============ -->
-<section class="trust-strip">
-  <div class="trust-inner">
-    <div class="trust-item"><span>📦</span>Delivery across Pakistan</div>
-    <div class="trust-item"><span>🛡️</span>Warranty on select components</div>
-    <div class="trust-item"><span>💬</span>Confirmed by message before dispatch</div>
-  </div>
-</section>
-
-<!-- ============ ORDER FORM ============ -->
-<section class="order-section" id="order">
-  <div class="order-inner">
-    <h2>Place your order</h2>
-    <p class="order-sub">Fill this in and it lands straight in our inbox at <strong>veo222547@gmail.com</strong>. We'll message you back to confirm delivery details.</p>
-
-    <form id="orderForm" action="https://formsubmit.co/veo222547@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New order — PixelForge">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-
-      <div class="form-row">
-        <label for="fullName">Full name</label>
-        <input type="text" id="fullName" name="Full Name" required placeholder="e.g. Ali Raza">
-      </div>
-
-      <div class="form-row two-col">
-        <div>
-          <label for="phone">Phone / WhatsApp</label>
-          <input type="tel" id="phone" name="Phone" required placeholder="03xx-xxxxxxx">
-        </div>
-        <div>
-          <label for="email">Email (optional)</label>
-          <input type="email" id="email" name="Email" placeholder="you@example.com">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <label for="address">Delivery address</label>
-        <textarea id="address" name="Address" rows="3" required placeholder="House / street, area, city"></textarea>
-      </div>
-
-      <div class="form-row two-col">
-        <div>
-          <label for="product">Product</label>
-          <select id="product" name="Product" required>
-            <option value="" disabled selected>Choose a product</option>
-            <option value="7-Button Wired Gaming Mouse — Rs. 1,199">Wired Gaming Mouse — Rs. 1,199</option>
-            <option value="JEDEL KL69 Mechanical Keyboard — Rs. 4,000">JEDEL KL69 Keyboard — Rs. 4,000</option>
-            <option value="i5-11400H RTX3050 Gaming Laptop — Rs. 260,000">Gaming Laptop (i5/RTX3050) — Rs. 260,000</option>
-            <option value="Full-Desk Gaming Mousepad 700x300mm — Rs. 1,399">Gaming Mousepad — Rs. 1,399</option>
-            <option value="Ryzen 5 3600 / RX590 Gaming PC — Rs. 120,000">Ryzen 5 3600 Gaming PC — Rs. 120,000</option>
-          </select>
-        </div>
-        <div>
-          <label for="qty">Quantity</label>
-          <input type="number" id="qty" name="Quantity" min="1" value="1" required>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <label for="notes">Notes (optional)</label>
-        <textarea id="notes" name="Notes" rows="2" placeholder="Color preference, delivery time, anything else"></textarea>
-      </div>
-
-      <button type="submit" class="btn-order btn-wide"><span>Send Order</span></button>
-      <p class="form-note">First-time setup: the inbox owner needs to confirm one activation email from FormSubmit before orders start arriving.</p>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-col">
-      <div class="brand">Pixel<span class="brand-accent">Forge</span></div>
-      <p>Gaming mice, keyboards, mousepads, laptops &amp; prebuilt PCs — Pakistan.</p>
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div>
+      <a href="#home" class="logo"><span class="byte">Byte</span><span class="mart">Mart</span></a>
+      <p>Gaming mice, keyboards, mousepads, laptops &amp; prebuilt PCs — delivered across Pakistan.</p>
     </div>
-    <div class="footer-col">
-      <h4>Shop</h4>
-      <a href="#mouse">Gaming Mouse</a>
-      <a href="#keyboard">Mechanical Keyboard</a>
-      <a href="#laptop">Gaming Laptop</a>
-      <a href="#pc">Gaming PC</a>
-      <a href="#mousepad">Mousepad</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="mailto:veo222547@gmail.com">veo222547@gmail.com</a>
-      <a href="#order">Place an order</a>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="#home">All hardware</a>
+        <a href="#order">Place an order</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:veo222547@gmail.com">veo222547@gmail.com</a>
+        <a href="#order">Order form</a>
+      </div>
     </div>
   </div>
-  <p class="footer-fine">Prices in PKR. Warranty terms vary by component — see each product's specs above.</p>
+  <div class="wrap footer-bottom">
+    <span>© 2026 ByteMart — prices shown in PKR.</span>
+    <span>Warranty terms vary by component — see each product's specs.</span>
+  </div>
 </footer>
+
+<div class="toast" id="toast"></div>
 
 <script src="script.js"></script>
 </body>
