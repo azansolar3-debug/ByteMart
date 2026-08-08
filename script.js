@@ -6,103 +6,122 @@
 /* ---------- Product catalog ---------- */
 const PRODUCTS = [
   {
-    id: "bm-01", name: "Aero X1 Wireless Earbuds", price: 8990, oldPrice: 12990,
-    badge: "hot", rating: 4.6, reviewsBase: 214, stock: 34, seed: "aero-earbuds",
-    short: "Active noise cancelling earbuds with 32-hour battery life and IPX5 sweat resistance.",
+    id: "bm-01",
+    name: "7-Button Wired Gaming Mouse",
+    price: 1199,
+    badge: "Peripheral",
+    rating: 4.5,
+    reviewsBase: 128,
+    stock: 46,
+    image: "https://i.ibb.co/sdp9DCpQ/Screenshot-2026-08-08-020049.png",
+    gallery: [
+      "https://i.ibb.co/sdp9DCpQ/Screenshot-2026-08-08-020049.png",
+      "https://i.ibb.co/DHwLd9tY/Screenshot-2026-08-08-020102.png",
+      "https://i.ibb.co/Sw4mFQRT/Screenshot-2026-08-08-020115.png"
+    ],
+    short: "A 7-button wired gaming mouse with mechanical switches, RGB lighting, and adjustable DPI — built for fast-paced play.",
     specs: [
-      ["Driver Size", "11mm Dynamic Driver"], ["Battery Life", "8h (earbuds) + 24h (case)"],
-      ["Noise Cancellation", "Hybrid ANC, up to 32dB"], ["Connectivity", "Bluetooth 5.3"],
-      ["Water Resistance", "IPX5"], ["Charging", "USB-C, Qi Wireless"], ["Weight", "4.8g per bud"]
+      ["Buttons", "7 programmable buttons"],
+      ["Switch Type", "Mechanical micro-switches"],
+      ["Lighting", "RGB, 7 lighting modes"],
+      ["DPI Levels", "4-level adjustable DPI"],
+      ["Included Accessory", "Mouse pad included"],
+      ["Best For", "FPS games, PUBG Mobile emulator play"],
+      ["Connection", "Wired, USB-A"]
     ]
   },
   {
-    id: "bm-02", name: "Pulse Fit Smartwatch S2", price: 15490, oldPrice: 19990,
-    badge: "new", rating: 4.4, reviewsBase: 156, stock: 21, seed: "pulse-smartwatch",
-    short: "AMOLED smartwatch with 24/7 heart-rate tracking, GPS, and 10-day battery.",
+    id: "bm-02",
+    name: "JEDEL KL69 — 60% Mechanical RGB Keyboard",
+    price: 4000,
+    badge: "Peripheral",
+    rating: 4.6,
+    reviewsBase: 94,
+    stock: 30,
+    image: "https://i.ibb.co/G3xC0DZt/Screenshot-2026-08-08-020615.png",
+    gallery: [
+      "https://i.ibb.co/G3xC0DZt/Screenshot-2026-08-08-020615.png"
+    ],
+    short: "A compact 61-key 60% mechanical keyboard with red switches and rainbow RGB backlighting.",
     specs: [
-      ["Display", "1.43\" AMOLED, 466x466"], ["Battery Life", "Up to 10 days"],
-      ["Sensors", "HR, SpO2, GPS, Accelerometer"], ["Water Resistance", "5ATM"],
-      ["Compatibility", "Android 8+ / iOS 12+"], ["Strap", "Silicone, 22mm interchangeable"]
+      ["Layout", "61-key compact (60%) layout"],
+      ["Switch Type", "Red mechanical switches"],
+      ["Backlight", "RGB rainbow, multiple effects"],
+      ["Anti-Ghosting", "Yes"],
+      ["Connection", "Wired, USB"],
+      ["Compatibility", "Windows / macOS / Linux"]
     ]
   },
   {
-    id: "bm-03", name: "Nimbus 40W Portable Speaker", price: 6490, oldPrice: null,
-    badge: null, rating: 4.7, reviewsBase: 98, stock: 40, seed: "nimbus-speaker",
-    short: "Room-filling 40W speaker with deep bass and 18-hour battery, built for the outdoors.",
+    id: "bm-03",
+    name: "i5-11400H / RTX 3050 Gaming Laptop",
+    price: 260000,
+    badge: "System",
+    rating: 4.7,
+    reviewsBase: 52,
+    stock: 6,
+    image: "https://i.ibb.co/wrz5SfSy/Screenshot-2026-08-08-020715.png",
+    gallery: [
+      "https://i.ibb.co/wrz5SfSy/Screenshot-2026-08-08-020715.png"
+    ],
+    short: "11th Gen Core i5 gaming laptop with an RTX 3050, 32GB RAM, and a 16.1\" FHD IPS display — box packed with 1 year warranty.",
     specs: [
-      ["Output Power", "40W RMS"], ["Battery Life", "18 hours @ 60% volume"],
-      ["Connectivity", "Bluetooth 5.2, AUX, USB-C"], ["Water Resistance", "IPX7"],
-      ["Special Features", "TWS Pairing, Built-in Mic"], ["Weight", "780g"]
+      ["Processor", "Intel Core i5-11400H (11th Gen)"],
+      ["RAM", "32GB DDR4"],
+      ["Storage", "512GB NVMe SSD"],
+      ["Graphics", "NVIDIA RTX 3050 4GB"],
+      ["Display", "16.1\" FHD IPS"],
+      ["Operating System", "Windows 11"],
+      ["Condition", "Box packed, 1 year warranty"]
     ]
   },
   {
-    id: "bm-04", name: "Voyager 4K Action Camera", price: 21900, oldPrice: 26900,
-    badge: "hot", rating: 4.3, reviewsBase: 67, stock: 12, seed: "voyager-camera",
-    short: "Waterproof 4K60 action camera with 2-inch touchscreen and electronic stabilization.",
+    id: "bm-04",
+    name: "Full-Desk Gaming Mousepad, 700×300mm",
+    price: 1399,
+    badge: "Peripheral",
+    rating: 4.4,
+    reviewsBase: 76,
+    stock: 60,
+    image: "https://i.ibb.co/hxS4wpV4/Screenshot-2026-08-08-020810.png",
+    gallery: [
+      "https://i.ibb.co/hxS4wpV4/Screenshot-2026-08-08-020810.png",
+      "https://i.ibb.co/hGbH8wc/Screenshot-2026-08-08-020825.png",
+      "https://i.ibb.co/zV82383v/Screenshot-2026-08-08-020843.png"
+    ],
+    short: "A large 700×300mm desk mat with a rubber and nylon surface, anti-slip base, and stitched edges.",
     specs: [
-      ["Video Resolution", "4K @ 60fps, 1080p @ 240fps"], ["Screen", "2\" Touch LCD"],
-      ["Stabilization", "6-axis EIS"], ["Waterproof", "Up to 11m without case"],
-      ["Storage", "microSD up to 512GB"], ["Battery", "1350mAh, ~90 min recording"]
+      ["Dimensions", "700 x 300 mm"],
+      ["Surface Material", "Rubber + nylon"],
+      ["Base", "Anti-slip rubber base"],
+      ["Water Resistance", "Water-resistant surface"],
+      ["Edges", "Stitched, frays-resistant"],
+      ["Shape", "Rectangular, full-desk size"]
     ]
   },
   {
-    id: "bm-05", name: "CoreDrive 1TB Portable SSD", price: 13990, oldPrice: 16490,
-    badge: null, rating: 4.8, reviewsBase: 302, stock: 55, seed: "coredrive-ssd",
-    short: "Pocket-sized 1TB SSD with 1050MB/s transfer speeds and shock-resistant aluminum body.",
+    id: "bm-05",
+    name: "Ryzen 5 3600 / RX 590 8GB Gaming Tower",
+    price: 120000,
+    badge: "System",
+    rating: 4.5,
+    reviewsBase: 38,
+    stock: 8,
+    image: "https://i.ibb.co/JRQQW3vv/Screenshot-2026-08-08-021037.png",
+    gallery: [
+      "https://i.ibb.co/JRQQW3vv/Screenshot-2026-08-08-021037.png",
+      "https://i.ibb.co/GfN2KsYm/Screenshot-2026-08-08-021048.png",
+      "https://i.ibb.co/tpRZGzFW/Screenshot-2026-08-08-021113.png"
+    ],
+    short: "A Ryzen 5 3600 prebuilt gaming tower with an RX 590 8GB, 16GB RAM, and RGB airflow — ready to play out of the box.",
     specs: [
-      ["Capacity", "1TB"], ["Read Speed", "Up to 1050 MB/s"],
-      ["Interface", "USB 3.2 Gen 2 (USB-C)"], ["Body", "Aluminum, shock resistant to 2m"],
-      ["Compatibility", "Windows / macOS / Android"], ["Warranty", "3 years"]
-    ]
-  },
-  {
-    id: "bm-06", name: "SkyHover Mini Drone", price: 24990, oldPrice: 29990,
-    badge: "new", rating: 4.2, reviewsBase: 41, stock: 9, seed: "skyhover-drone",
-    short: "Foldable mini drone with 2.7K camera, 3-axis gimbal, and 32-minute flight time.",
-    specs: [
-      ["Camera", "2.7K UHD, 3-axis gimbal"], ["Flight Time", "32 minutes per battery"],
-      ["Control Range", "8km (open field)"], ["Weight", "249g (sub-registration)"],
-      ["Features", "Obstacle avoidance, Return-to-home"], ["Included", "2 batteries, carry case"]
-    ]
-  },
-  {
-    id: "bm-07", name: "Horizon VR Headset Lite", price: 34990, oldPrice: null,
-    badge: null, rating: 4.1, reviewsBase: 58, stock: 15, seed: "horizon-vr",
-    short: "Standalone VR headset with a 90Hz display and hand-tracking, no PC required.",
-    specs: [
-      ["Display", "2x 2064x2208, 90Hz"], ["Storage", "128GB"],
-      ["Tracking", "6DoF inside-out, hand tracking"], ["Battery Life", "~2.5 hours active use"],
-      ["Weight", "503g"], ["Audio", "Integrated spatial speakers"]
-    ]
-  },
-  {
-    id: "bm-08", name: "Glow Home Smart Bulb (4-Pack)", price: 4290, oldPrice: 5490,
-    badge: null, rating: 4.5, reviewsBase: 189, stock: 80, seed: "glow-bulb",
-    short: "Wi-Fi enabled smart bulbs with 16 million colors, voice control, and scheduling.",
-    specs: [
-      ["Brightness", "800 lumens"], ["Color Range", "16 million colors + tunable white"],
-      ["Connectivity", "Wi-Fi 2.4GHz, no hub needed"], ["Voice Control", "Alexa, Google Assistant"],
-      ["Lifespan", "25,000 hours"], ["Pack Size", "4 bulbs"]
-    ]
-  },
-  {
-    id: "bm-09", name: "FitBand Air Activity Tracker", price: 3990, oldPrice: 5290,
-    badge: "hot", rating: 4.3, reviewsBase: 271, stock: 60, seed: "fitband-air",
-    short: "Lightweight fitness band with sleep tracking, 20 sport modes, and a 14-day battery.",
-    specs: [
-      ["Display", "1.1\" Color AMOLED"], ["Battery Life", "Up to 14 days"],
-      ["Sport Modes", "20+"], ["Water Resistance", "5ATM"],
-      ["Sensors", "HR, SpO2, Sleep tracking"], ["Weight", "22g"]
-    ]
-  },
-  {
-    id: "bm-10", name: "PowerCell 20K Fast Charger", price: 5990, oldPrice: null,
-    badge: null, rating: 4.6, reviewsBase: 143, stock: 70, seed: "powercell-bank",
-    short: "20,000mAh power bank with 65W PD fast charging — enough for a laptop and phone.",
-    specs: [
-      ["Capacity", "20,000mAh"], ["Output", "65W USB-C PD, 22.5W USB-A"],
-      ["Ports", "2x USB-C, 1x USB-A"], ["Charge Time", "~1.5 hours (65W input)"],
-      ["Display", "LED percentage readout"], ["Weight", "398g"]
+      ["Processor", "AMD Ryzen 5 3600"],
+      ["Motherboard", "A320 chipset"],
+      ["RAM", "16GB DDR4 3200MHz"],
+      ["Graphics", "AMD RX 590 8GB"],
+      ["Storage", "128GB NVMe SSD + 1TB HDD"],
+      ["Power Supply", "650W PSU"],
+      ["Case & Cooling", "Gaming case, 3x ARGB fans, Chillspike cooler"]
     ]
   }
 ];
@@ -110,13 +129,13 @@ const PRODUCTS = [
 const REVIEW_NAMES = ["Ayesha K.", "Bilal R.", "Hira M.", "Usman T.", "Sana A.", "Fahad Z.", "Mahnoor S.", "Danish I."];
 const REVIEW_LINES = [
   "Exactly as described, arrived in great packaging and works perfectly.",
-  "Good value for the price. Battery life is better than I expected.",
-  "Build quality feels premium. Would recommend to a friend.",
+  "Good value for the price. Performs better than I expected.",
+  "Build quality feels solid. Would recommend to a friend.",
   "Delivery was quick — ordered on Monday, had it by Thursday.",
   "Does the job well, though the manual could be clearer.",
   "Really happy with this purchase, matches the listing photos closely.",
-  "Setup was simple and it paired with my phone in seconds.",
-  "Solid product, one star off only because I expected a longer cable."
+  "Setup was simple and it worked right out of the box.",
+  "Solid product for the price, one star off only for the packaging."
 ];
 
 function seedReviews(product) {
@@ -143,9 +162,6 @@ function addReview(productId, review) {
   localStorage.setItem(key, JSON.stringify(list));
 }
 
-function img(seed, size = 600) {
-  return `https://picsum.photos/seed/${seed}/${size}/${size}`;
-}
 function money(n) {
   return "Rs. " + n.toLocaleString("en-PK");
 }
@@ -269,10 +285,10 @@ function viewHome(products, query) {
     <div class="container">
       <div>
         <p class="hero-eyebrow">// Free delivery on orders over Rs. 5,000</p>
-        <h1>Tech that keeps up<br>with your <em>day.</em></h1>
-        <p>ByteMart curates the gadgets people actually reach for daily — earbuds, wearables, and smart essentials — at honest prices, with delivery across Pakistan.</p>
+        <h1>Gaming gear that<br>keeps up with your <em>reflexes.</em></h1>
+        <p>ByteMart stocks the mice, keyboards, mousepads, laptops and prebuilt PCs gamers actually reach for — at honest prices, with delivery across Pakistan.</p>
         <div class="hero-ctas">
-          <button class="btn btn-primary" id="shopBestSellers">Shop Best Sellers</button>
+          <button class="btn btn-primary" id="shopBestSellers">Shop Gaming Gear</button>
           <a class="btn btn-ghost" href="#/track">Track an Order</a>
         </div>
         <div class="hero-badges">
@@ -283,15 +299,15 @@ function viewHome(products, query) {
       </div>
       <div class="hero-visual">
         <div class="orb"></div>
-        <div class="chip c1">Rating <span class="g">4.6★</span> avg.</div>
-        <div class="chip c2">10k+ orders delivered</div>
+        <div class="chip c1">Rating <span class="g">4.5★</span> avg.</div>
+        <div class="chip c2">5k+ orders delivered</div>
       </div>
     </div>
   </section>`;
 
   const heading = query
     ? `<h2>Results for "${escapeHtml(query)}"</h2><p>${products.length} product${products.length === 1 ? "" : "s"} found</p>`
-    : `<h2>Featured Products</h2><p>Hand-picked gear, restocked weekly</p>`;
+    : `<h2>Gaming Gear</h2><p>Hand-picked peripherals and systems, ready to ship</p>`;
 
   const cards = products.length ? products.map(cardHtml).join("") :
     `<div class="empty-state"><h3>No products match your search</h3><p>Try a different keyword, or browse all products.</p><br><a class="btn btn-primary" href="#/">Browse all products</a></div>`;
@@ -308,20 +324,17 @@ function viewHome(products, query) {
 }
 
 function cardHtml(p) {
-  const discount = p.oldPrice ? Math.round(100 - (p.price / p.oldPrice) * 100) : null;
   return `
   <article class="card" data-id="${p.id}">
     <div class="card-media">
-      <img src="${img(p.seed)}" alt="${escapeHtml(p.name)}" loading="lazy">
-      ${p.badge ? `<span class="badge ${p.badge}">${p.badge === "hot" ? "Best Seller" : "New"}</span>` : ""}
-      ${discount ? `<span class="discount-badge">-${discount}%</span>` : ""}
+      <img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy">
+      ${p.badge ? `<span class="badge">${escapeHtml(p.badge)}</span>` : ""}
     </div>
     <div class="card-body">
       <div class="card-name">${escapeHtml(p.name)}</div>
       <div>${stars(p.rating)} <span class="rating-count">(${p.reviewsBase})</span></div>
       <div class="price-row">
         <span class="price">${money(p.price)}</span>
-        ${p.oldPrice ? `<span class="price-old">${money(p.oldPrice)}</span>` : ""}
       </div>
       <div class="card-actions">
         <button class="btn btn-outline add-cart-btn" data-id="${p.id}">Add to Cart</button>
@@ -353,16 +366,15 @@ function viewProduct(p) {
   const avg = (reviews.reduce((a, r) => a + r.rating, 0) / reviews.length) || p.rating;
   const dist = [5, 4, 3, 2, 1].map(star => reviews.filter(r => r.rating === star).length);
   const maxDist = Math.max(1, ...dist);
-  const discount = p.oldPrice ? Math.round(100 - (p.price / p.oldPrice) * 100) : null;
 
   return `
   <div class="container">
     <div class="breadcrumb"><a href="#/">Home</a><span>/</span>${escapeHtml(p.name)}</div>
     <div class="product-detail">
       <div>
-        <div class="gallery-main"><img id="mainImg" src="${img(p.seed)}" alt="${escapeHtml(p.name)}"></div>
+        <div class="gallery-main"><img id="mainImg" src="${p.image}" alt="${escapeHtml(p.name)}"></div>
         <div class="gallery-thumbs">
-          ${[p.seed, p.seed + "-b", p.seed + "-c"].map((s, i) => `<button class="thumb ${i === 0 ? "active" : ""}" data-src="${img(s, 300)}"><img src="${img(s, 300)}" alt=""></button>`).join("")}
+          ${p.gallery.map((src, i) => `<button class="thumb ${i === 0 ? "active" : ""}" data-src="${src}"><img src="${src}" alt=""></button>`).join("")}
         </div>
       </div>
       <div>
@@ -372,8 +384,6 @@ function viewProduct(p) {
 
         <div class="pd-price-box">
           <span class="pd-price">${money(p.price)}</span>
-          ${p.oldPrice ? `<span class="pd-price-old">${money(p.oldPrice)}</span>` : ""}
-          ${discount ? `<div class="pd-save">You save ${money(p.oldPrice - p.price)} (${discount}%)</div>` : ""}
         </div>
 
         <div class="stock-line"><span class="stock-dot"></span> In Stock — ${p.stock} units available</div>
@@ -520,7 +530,7 @@ function viewCart() {
       <div>
         ${items.map(x => `
           <div class="cart-row" data-id="${x.p.id}">
-            <img src="${img(x.p.seed, 200)}" alt="${escapeHtml(x.p.name)}">
+            <img src="${x.p.image}" alt="${escapeHtml(x.p.name)}">
             <div>
               <div class="name">${escapeHtml(x.p.name)}</div>
               <div class="unit">${money(x.p.price)} each</div>
